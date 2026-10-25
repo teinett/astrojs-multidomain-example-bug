@@ -2,6 +2,8 @@
 
 > **Not a real project.** This repo is only a minimal reproduction of an Astro bug, for the Astro team: `i18n.domains` works in `astro build`, but `astro dev` ignores it. There is nothing else here — no real site, no real domains.
 
+Issue: https://github.com/withastro/astro/issues/18510
+
 ## The bug
 
 With `i18n.domains`, Astro takes the locale from the request's `Host` header: `pt.example.local/` is served by `src/pages/[locale]/index.astro` with `Astro.currentLocale === "pt"`.
